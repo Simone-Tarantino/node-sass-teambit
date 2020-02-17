@@ -1,5 +1,4 @@
 header {
-  height: 730px;
   @include width-margin-lg;
   // navbar
   nav {
@@ -7,6 +6,7 @@ header {
     justify-content: space-between;
     border-bottom: 1px solid lightgrey;
     padding: 20px 0;
+    align-items: center;
     .nav-bar {
       display: flex;
       align-items: center;
@@ -72,6 +72,23 @@ header {
 @media screen and (max-width: 1200px) {
   header {
     @include widh-margin-md;
+    .main-header {
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      .header-text {
+        width: 700px;
+        padding-right: 0;
+      }
+      .header-img {
+        width: 100%;
+        img {
+          width: 570px;
+          margin-top: 10px;
+        }
+      }
+    }
   }
 }
 
@@ -90,6 +107,12 @@ header {
           color: $mainTxtColor;
         }
       }
+    }
+    .main-header .header-text {
+      width: 100%;
+    }
+    .main-header .header-img img {
+      width: 100%;
     }
   }
 }
