@@ -1,7 +1,6 @@
 header {
   height: 730px;
-  border: 1px solid black;
-  @include width-margin-auto;
+  @include width-margin-lg;
   // navbar
   nav {
     display: flex;
@@ -14,17 +13,44 @@ header {
       li {
         list-style: none;
         display: inline-block;
-        padding: 0 10px;
+        padding: 0 18px;
         .btn-white {
-          border: 1px solid black;
-          padding: 0 10px;
-          i {
-            font-size: 40px;
+          border: 1px solid $mainBtnColor;
+          padding: 10px 10px;
+          border-radius: 8px;
+          color: $mainBtnColor;
+          svg {
+            font-size: 17px;
           }
         }
         a {
           text-decoration: none;
           font-weight: 700;
+          color: $mainTxtColor;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    @include widh-margin-md;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header {
+    width: 100%;
+    nav {
+      padding: 15px 20px;
+      li a {
+        display: none;
+      }
+      .nav-bar {
+        a.no-display {
+          display: inline-block;
+          font-size: 25px;
           color: $mainTxtColor;
         }
       }

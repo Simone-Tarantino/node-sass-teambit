@@ -8,3 +8,7 @@ body {
   font-family: 'Muli', sans-serif;
   font-size: 13px;
 }
+
+header nav .nav-bar a.no-display {
+  display: none;
+}

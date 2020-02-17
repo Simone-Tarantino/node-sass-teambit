@@ -9,9 +9,12 @@ body {
   font-size: 13px;
 }
 
+header nav .nav-bar a.no-display {
+  display: none;
+}
+
 header {
   height: 730px;
-  border: 1px solid black;
   width: 1150px;
   margin: auto;
 }
@@ -31,21 +34,50 @@ header nav .nav-bar {
 header nav .nav-bar li {
   list-style: none;
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 18px;
 }
 
 header nav .nav-bar li .btn-white {
-  border: 1px solid black;
-  padding: 0 10px;
+  border: 1px solid #30488F;
+  padding: 10px 10px;
+  border-radius: 8px;
+  color: #30488F;
 }
 
-header nav .nav-bar li .btn-white i {
-  font-size: 40px;
+header nav .nav-bar li .btn-white svg {
+  font-size: 17px;
 }
 
 header nav .nav-bar li a {
   text-decoration: none;
   font-weight: 700;
   color: #58402C;
+}
+
+@media screen and (max-width: 1200px) {
+  header {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  header {
+    width: 100%;
+  }
+
+  header nav {
+    padding: 15px 20px;
+  }
+
+  header nav li a {
+    display: none;
+  }
+
+  header nav .nav-bar a.no-display {
+    display: inline-block;
+    font-size: 25px;
+    color: #58402C;
+  }
 }
 

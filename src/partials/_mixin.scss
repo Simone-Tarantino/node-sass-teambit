@@ -1,5 +1,10 @@
-@mixin width-margin-auto {
+@mixin width-margin-lg {
   width: 1150px;
+  margin: auto;
+}
+
+@mixin widh-margin-md {
+  width: 95%;
   margin: auto;
 }
 
