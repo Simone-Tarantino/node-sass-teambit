@@ -9,5 +9,8 @@
 }
 
 @mixin standard-btn {
-  
+  border: 1px solid $mainBtnColor;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
 }

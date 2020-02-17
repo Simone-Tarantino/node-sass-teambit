@@ -15,19 +15,55 @@ header {
         display: inline-block;
         padding: 0 18px;
         .btn-white {
-          border: 1px solid $mainBtnColor;
-          padding: 10px 10px;
-          border-radius: 8px;
+          @include standard-btn;
           color: $mainBtnColor;
           svg {
             font-size: 17px;
           }
         }
         a {
-          text-decoration: none;
           font-weight: 700;
           color: $mainTxtColor;
         }
+      }
+    }
+  }
+  .main-header {
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    color: $mainTxtColor;
+    .header-text {
+      width: 48%;
+      padding-right: 10px;
+      h2 {
+        font-size: 50px;
+        line-height: 80px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 25px;
+        line-height: 38px;
+      }
+      .btn-blue {
+        @include standard-btn;
+        margin: 20px 0;
+        background-color: $mainBtnColor;
+        color: white;
+        font-size: 16px;
+      }
+      span {
+        margin: 0 20px;
+        color: lightgrey;
+      }
+      a {
+        color: $mainTxtColor;
+      }
+    }
+    .header-img {
+      width: 52%;
+      img {
+        width: 100%;
       }
     }
   }

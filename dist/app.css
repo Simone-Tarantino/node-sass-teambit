@@ -6,7 +6,11 @@
 
 body {
   font-family: "Muli", sans-serif;
-  font-size: 13px;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
 }
 
 header nav .nav-bar a.no-display {
@@ -39,8 +43,9 @@ header nav .nav-bar li {
 
 header nav .nav-bar li .btn-white {
   border: 1px solid #30488F;
-  padding: 10px 10px;
+  padding: 10px 15px;
   border-radius: 8px;
+  display: inline-block;
   color: #30488F;
 }
 
@@ -49,9 +54,59 @@ header nav .nav-bar li .btn-white svg {
 }
 
 header nav .nav-bar li a {
-  text-decoration: none;
   font-weight: 700;
   color: #58402C;
+}
+
+header .main-header {
+  padding: 100px 0;
+  width: 100%;
+  display: flex;
+  color: #58402C;
+}
+
+header .main-header .header-text {
+  width: 48%;
+  padding-right: 10px;
+}
+
+header .main-header .header-text h2 {
+  font-size: 50px;
+  line-height: 80px;
+  margin-bottom: 20px;
+}
+
+header .main-header .header-text p {
+  font-size: 25px;
+  line-height: 38px;
+}
+
+header .main-header .header-text .btn-blue {
+  border: 1px solid #30488F;
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  margin: 20px 0;
+  background-color: #30488F;
+  color: white;
+  font-size: 16px;
+}
+
+header .main-header .header-text span {
+  margin: 0 20px;
+  color: lightgrey;
+}
+
+header .main-header .header-text a {
+  color: #58402C;
+}
+
+header .main-header .header-img {
+  width: 52%;
+}
+
+header .main-header .header-img img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
