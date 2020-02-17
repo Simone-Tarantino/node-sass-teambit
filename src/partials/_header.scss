@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 730px;
+  border: 1px solid black;
+  @include width-margin-auto;
+  nav {
+    display: flex;
+    border: 1px solid black;
+    li {
+      list-style: none;
+      display: inline-block;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
