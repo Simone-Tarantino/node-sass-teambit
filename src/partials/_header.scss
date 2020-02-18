@@ -17,6 +17,11 @@ header {
         .btn-white {
           @include standard-btn;
           color: $mainBtnColor;
+          transition: background-color 0.3s, color 0.3s;
+          &:hover{
+            color: white;
+            background-color: $mainBtnColor;
+          }
           svg {
             font-size: 17px;
           }
@@ -24,6 +29,10 @@ header {
         a {
           font-weight: 700;
           color: $mainTxtColor;
+          transition: color 0.2s;
+          &:hover {
+            color: $mainBtnColor;
+          }
         }
       }
     }
@@ -51,6 +60,11 @@ header {
         background-color: $mainBtnColor;
         color: white;
         font-size: 16px;
+        transition: background-color 0.3s;
+        &:hover {
+          background-color: $btnHoverColor;
+          color: white;
+        }
       }
       span {
         margin: 0 20px;
@@ -58,6 +72,9 @@ header {
       }
       a {
         color: $mainTxtColor;
+        &:hover {
+          color: $mainBtnColor;
+        }
       }
     }
     .header-img {
